@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Disable Classic Editor and Widget
-Plugin URI: https://github.com/Faridmia/
+Plugin URI: https://github.com/Faridmia/disable-classic-editor-and-widget
 Description: This plugin disables the Gutenberg Editor and Gutenberg widget block.
 Version: 1.0.0
 Author: faridmia
