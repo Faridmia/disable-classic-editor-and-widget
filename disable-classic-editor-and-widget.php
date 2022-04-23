@@ -21,13 +21,16 @@ define( 'DISABLE_CEAW_PLUGIN_PATH', plugin_dir_path( DISABLE_CEAW_PLUGIN_ROOT ) 
 define( 'DISABLE_CEAW_PLUGIN_BASE', plugin_basename( DISABLE_CEAW_PLUGIN_ROOT ) );
 
 
-add_filter( 'use_widgets_block_editor', '__return_false' );
+if( is_admin()) {
 
-add_filter("use_block_editor_for_post_type", "disable_ceaw_classic_editor");
+    add_filter( 'use_widgets_block_editor', '__return_false' );
 
-function disable_ceaw_classic_editor()
-{
-    return false;
+    add_filter("use_block_editor_for_post_type", "disable_ceaw_classic_editor");
+
+    function disable_ceaw_classic_editor()
+    {
+        return false;
+    }
 }
 
 /**
